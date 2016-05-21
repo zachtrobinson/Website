@@ -2,39 +2,121 @@ body, html, main {
 	/* important */
 	height: 100%;
 	font-family: 'Oswald', sans-serif;
+    width: 100%;
 }
 
-h1 {
-  color: white;
+body {
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px 10px;  
-  background-color: white;
-  overflow: hidden;
+.main-header {
+  text-align: center;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
 }
 
-.navbar li {
-  display:inline;
-  float:right;
+.main-header h1 {
+  margin: auto 70px;
+}
+
+.main-header ul {
+  padding-right: 70px;
+}
+
+.name a {
+  text-decoration: none;
+  color:coral;
+}
+
+li {
+    list-style-type: none;
 }
 
 li a {
   display: block;
   color: coral;
   text-align: center;
-  padding: 5px 10px;
+  padding: 5px 20px;
+  margin: auto 5px;
   text-decoration: none;
 }
 
-#resume a {
-  text-decoration: none;
-  background-color:coral;
-  color: white;
+/*---------------------------------------
+----------PARALLAX STYLES--------------*/
+
+/*---------------------------------------
+----------PRIMARY STRUCTURE------------*/
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/*---------------------------------------
+----------SECTIONS---------------------*/
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../img/space.jpg");
+  height: 400px;
+}
+section.module.parallax-2 {
+  background-image: url("../img/rain%20on%20a%20train.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/demo/_small/3.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
 }
