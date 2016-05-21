@@ -1,0 +1,40 @@
+body, html, main {
+	/* important */
+	height: 100%;
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 10px;  
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar li {
+  display:inline;
+  float:right;
+}
+
+li a {
+  display: block;
+  color: coral;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+#resume a {
+  text-decoration: none;
+  background-color:coral;
+  color: white;
+}
